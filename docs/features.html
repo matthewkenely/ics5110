@@ -44,12 +44,216 @@ G3,final grade (numeric: from 0 to 20; output target)
 <body>
     <h1>ICS5110 Web Page</h1>
     <p>Feature Reference</p>
-    <ul>
-        <li><a href="./features">Feature Reference</a></li>
-        <li><a href="./distributions">Feature Distributions</a></li>
-    </ul>
-    <table id="featureReference">
-    </table>
+    <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th>Feature</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Encoding Mappings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>school</td>
+            <td>object</td>
+            <td>Student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)</td>
+            <td>'GP': 0, 'MS': 1</td>
+          </tr>
+          <tr>
+            <td>sex</td>
+            <td>object</td>
+            <td>Student's sex (binary: 'F' - female or 'M' - male)</td>
+            <td>'F': 0, 'M': 1</td>
+          </tr>
+          <tr>
+            <td>age</td>
+            <td>int64</td>
+            <td>Student's age (numeric: from 15 to 22)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>address</td>
+            <td>object</td>
+            <td>Student's home address type (binary: 'U' - urban or 'R' - rural)</td>
+            <td>'R': 0, 'U': 1</td>
+          </tr>
+          <tr>
+            <td>famsize</td>
+            <td>object</td>
+            <td>Family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3)</td>
+            <td>'GT3': 0, 'LE3': 1</td>
+          </tr>
+          <tr>
+            <td>Pstatus</td>
+            <td>object</td>
+            <td>Parent's cohabitation status (binary: 'T' - living together or 'A' - apart)</td>
+            <td>'A': 0, 'T': 1</td>
+          </tr>
+          <tr>
+            <td>Medu</td>
+            <td>int64</td>
+            <td>Mother's education (numeric: 0 - none, 1 - primary (4th grade), 2 - 5th to 9th grade, 3 - secondary, 4 - higher)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Fedu</td>
+            <td>int64</td>
+            <td>Father's education (numeric: 0 - none, 1 - primary (4th grade), 2 - 5th to 9th grade, 3 - secondary, 4 - higher)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Mjob</td>
+            <td>object</td>
+            <td>Mother's job (nominal: 'teacher', 'health' care, 'services' (e.g., administrative/police), 'at_home', 'other')</td>
+            <td>'at_home': 0, 'health': 1, 'other': 2, 'services': 3, 'teacher': 4</td>
+          </tr>
+          <tr>
+            <td>Fjob</td>
+            <td>object</td>
+            <td>Father's job (nominal: 'teacher', 'health' care, 'services' (e.g., administrative/police), 'at_home', 'other')</td>
+            <td>'at_home': 0, 'health': 1, 'other': 2, 'services': 3, 'teacher': 4</td>
+          </tr>
+          <tr>
+            <td>reason</td>
+            <td>object</td>
+            <td>Reason to choose this school (nominal: 'home', 'reputation', 'course', 'other')</td>
+            <td>'course': 0, 'home': 1, 'other': 2, 'reputation': 3</td>
+          </tr>
+          <tr>
+            <td>guardian</td>
+            <td>object</td>
+            <td>Student's guardian (nominal: 'mother', 'father', 'other')</td>
+            <td>'father': 0, 'mother': 1, 'other': 2</td>
+          </tr>
+          <tr>
+            <td>traveltime</td>
+            <td>int64</td>
+            <td>Home-to-school travel time (numeric: 1 - &lt;15 min., 2 - 15-30 min., 3 - 30-60 min., 4 - &gt;1 hour)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>studytime</td>
+            <td>int64</td>
+            <td>Weekly study time (numeric: 1 - &lt;2 hours, 2 - 2-5 hours, 3 - 5-10 hours, 4 - &gt;10 hours)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>failures</td>
+            <td>int64</td>
+            <td>Number of past class failures (numeric: 1&lt;=n&lt;3, else 4)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>schoolsup</td>
+            <td>object</td>
+            <td>Extra educational support (binary: yes or no)</td>
+            <td>'no': 0, 'yes': 1</td>
+          </tr>
+          <tr>
+            <td>famsup</td>
+            <td>object</td>
+            <td>Family educational support (binary: yes or no)</td>
+            <td>'no': 0, 'yes': 1</td>
+          </tr>
+          <tr>
+            <td>paid</td>
+            <td>object</td>
+            <td>Extra paid classes within course subject (Math or Portuguese) (binary: yes or no)</td>
+            <td>'no': 0, 'yes': 1</td>
+          </tr>
+          <tr>
+            <td>activities</td>
+            <td>object</td>
+            <td>Extra-curricular activities (binary: yes or no)</td>
+            <td>'no': 0, 'yes': 1</td>
+          </tr>
+          <tr>
+            <td>nursery</td>
+            <td>object</td>
+            <td>Attended nursery school (binary: yes or no)</td>
+            <td>'no': 0, 'yes': 1</td>
+          </tr>
+          <tr>
+            <td>higher</td>
+            <td>object</td>
+            <td>Wants to pursue higher education (binary: yes or no)</td>
+            <td>'no': 0, 'yes': 1</td>
+          </tr>
+          <tr>
+            <td>internet</td>
+            <td>object</td>
+            <td>Internet access at home (binary: yes or no)</td>
+            <td>'no': 0, 'yes': 1</td>
+          </tr>
+          <tr>
+            <td>romantic</td>
+            <td>object</td>
+            <td>In a romantic relationship (binary: yes or no)</td>
+            <td>'no': 0, 'yes': 1</td>
+          </tr>
+          <tr>
+            <td>famrel</td>
+            <td>int64</td>
+            <td>Quality of family relationships (numeric: from 1 - very bad to 5 - excellent)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>freetime</td>
+            <td>int64</td>
+            <td>Free time after school (numeric: from 1 - very low to 5 - very high)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>goout</td>
+            <td>int64</td>
+            <td>Going out with friends (numeric: from 1 - very low to 5 - very high)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Dalc</td>
+            <td>int64</td>
+            <td>Workday alcohol consumption (numeric: from 1 - very low to 5 - very high)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Walc</td>
+            <td>int64</td>
+            <td>Weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>health</td>
+            <td>int64</td>
+            <td>Current health status (numeric: from 1 - very bad to 5 - very good)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>absences</td>
+            <td>int64</td>
+            <td>Number of school absences (numeric: from 0 to 93)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>G1</td>
+            <td>int64</td>
+            <td>first period grade (numeric: from 0 to 20)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>G2</td>
+            <td>int64</td>
+            <td>second period grade (numeric: from 0 to 20)</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>G3</td>
+            <td>int64</td>
+            <td>final grade (numeric: from 0 to 20; output target)</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
 </body>
 
 <script>
