@@ -1,0 +1,117 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+/* Set custom color names */
+:root {
+    --black: #252628;
+    --dark: rgb(33, 33, 33);
+    --white: #d7d7d7;
+    --fade: #8f8f8f;
+    --link: #3a6abb;
+    --linkhover: #355da2;
+}
+
+body {
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    margin: 3em;
+    background-color: var(--black);
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: var(--linkhover);
+}
+
+ul {
+    list-style-type: none; /* Remove default numbering */
+    counter-reset: list-counter; /* Initialize a counter */
+    padding: 0.5em 1em;
+    background-color: var(--dark);
+    border-radius: 0.5em;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+li {
+    margin: 0.7em 0;
+    counter-increment: list-counter; /* Increment the counter for each list item */
+    font-family: 'Roboto', sans-serif;
+}
+
+li::before {
+    content: counter(list-counter) " "; /* Display the counter with a space after */
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-right: 0.5em;
+    color: var(--fade); /* Set color to match your style */
+}
+
+hr {
+    border: 0;
+    border-top: 1px rgba(255, 255, 255, 0.2) solid;
+    margin: 2em 0;
+}
+
+p {
+    /* Max width half the screen size, not browser */
+    max-width: 66vw;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    /* change grid color, only horizontal lines */
+    border: 1px solid var(--black);
+    
+}
+
+th {
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    padding: 0.8em;
+    border: 1px solid var(--dark);
+}
+
+td {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'JetBrains Mono', monospace;
+    padding: 0.8em;
+    border: 1px solid var(--black);
+}
+
+tr:not(:last-child) td {
+    border-bottom: 1px solid var(--fade); /* Line color */
+}
+
+.back {
+    font-size: 1.2rem;
+}
+
+/* Mobile devices, check if ratio is square or less */\
+@media (max-aspect-ratio: 1/1) {
+    body {
+
+    }
+}
