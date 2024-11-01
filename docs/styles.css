@@ -102,16 +102,9 @@ td {
 }
 
 tr:not(:last-child) td {
-    border-bottom: 1px solid var(--fade); /* Line color */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Line color */
 }
 
 .back {
     font-size: 1.2rem;
-}
-
-/* Mobile devices, check if ratio is square or less */\
-@media (max-aspect-ratio: 1/1) {
-    body {
-
-    }
 }
