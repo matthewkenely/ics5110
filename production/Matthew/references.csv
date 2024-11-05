@@ -1,0 +1,34 @@
+Feature,Type,Description,Encoding Mappings
+school,object,Student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira),"'GP': 0, 'MS': 1"
+sex,object,Student's sex (binary: 'F' - female or 'M' - male),"'F': 0, 'M': 1"
+age,int64,Student's age (numeric: from 15 to 22),
+address,object,Student's home address type (binary: 'U' - urban or 'R' - rural),"'R': 0, 'U': 1"
+famsize,object,Family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3),"'GT3': 0, 'LE3': 1"
+Pstatus,object,Parent's cohabitation status (binary: 'T' - living together or 'A' - apart),"'A': 0, 'T': 1"
+Medu,int64,"Mother's education (numeric: 0 - none, 1 - primary (4th grade), 2 - 5th to 9th grade, 3 - secondary, 4 - higher)",
+Fedu,int64,"Father's education (numeric: 0 - none, 1 - primary (4th grade), 2 - 5th to 9th grade, 3 - secondary, 4 - higher)",
+Mjob,object,"Mother's job (nominal: 'teacher', 'health' care, 'services' (e.g., administrative/police), 'at_home', 'other')","'at_home': 0, 'health': 1, 'other': 2, 'services': 3, 'teacher': 4"
+Fjob,object,"Father's job (nominal: 'teacher', 'health' care, 'services' (e.g., administrative/police), 'at_home', 'other')","'at_home': 0, 'health': 1, 'other': 2, 'services': 3, 'teacher': 4"
+reason,object,"Reason to choose this school (nominal: 'home', 'reputation', 'course', 'other')","'course': 0, 'home': 1, 'other': 2, 'reputation': 3"
+guardian,object,"Student's guardian (nominal: 'mother', 'father', 'other')","'father': 0, 'mother': 1, 'other': 2"
+traveltime,int64,"Home-to-school travel time (numeric: 1 - <15 min., 2 - 15-30 min., 3 - 30-60 min., 4 - >1 hour)",
+studytime,int64,"Weekly study time (numeric: 1 - <2 hours, 2 - 2-5 hours, 3 - 5-10 hours, 4 - >10 hours)",
+failures,int64,"Number of past class failures (numeric: 1<=n<3, else 4)",
+schoolsup,object,Extra educational support (binary: yes or no),"'no': 0, 'yes': 1"
+famsup,object,Family educational support (binary: yes or no),"'no': 0, 'yes': 1"
+paid,object,Extra paid classes within course subject (Math or Portuguese) (binary: yes or no),"'no': 0, 'yes': 1"
+activities,object,Extra-curricular activities (binary: yes or no),"'no': 0, 'yes': 1"
+nursery,object,Attended nursery school (binary: yes or no),"'no': 0, 'yes': 1"
+higher,object,Wants to pursue higher education (binary: yes or no),"'no': 0, 'yes': 1"
+internet,object,Internet access at home (binary: yes or no),"'no': 0, 'yes': 1"
+romantic,object,In a romantic relationship (binary: yes or no),"'no': 0, 'yes': 1"
+famrel,int64,Quality of family relationships (numeric: from 1 - very bad to 5 - excellent),
+freetime,int64,Free time after school (numeric: from 1 - very low to 5 - very high),
+goout,int64,Going out with friends (numeric: from 1 - very low to 5 - very high),
+Dalc,int64,Workday alcohol consumption (numeric: from 1 - very low to 5 - very high),
+Walc,int64,Weekend alcohol consumption (numeric: from 1 - very low to 5 - very high),
+health,int64,Current health status (numeric: from 1 - very bad to 5 - very good),
+absences,int64,Number of school absences (numeric: from 0 to 93),
+G1,int64,first period grade (numeric: from 0 to 20),
+G2,int64,second period grade (numeric: from 0 to 20),
+G3,int64,final grade (numeric: from 0 to 20; output target),
