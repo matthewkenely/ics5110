@@ -1,3 +1,0 @@
-[pca_gradio './gradio/pca_gradiao']
-    path = gradio/pca_gradiao
-    url = https://huggingface.co/spaces/heliaea/pca_gradiao
