@@ -1,3 +1,3 @@
-[submodule "gradio/pca_gradiao"]
-    path = gradio/pca_gradiao
-    url = https://huggingface.co/spaces/heliaea/pca_gradiao
+[submodule "gradio/pca_gradio"]
+    path = gradio/pca_gradio
+    url = https://huggingface.co/spaces/heliaea/pca_gradio
