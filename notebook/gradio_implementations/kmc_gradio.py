@@ -29,7 +29,7 @@ def make_gradio(cluster_df, model):
 
         # Return Gradio dataframe. Rows are models, columns are predictions, runtime, and model size
         to_return = pd.DataFrame({
-            'Model': ['Stacking Ensemble'],
+            'Model': ['K-Means Clustering'],
             'Prediction': [pred],
             'Runtime (ms)': [runtime],
             # Indices of top 5 in same cluster
