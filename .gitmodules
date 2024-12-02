@@ -9,3 +9,7 @@
 [submodule "gradio/kmc_gradio"]
     path = gradio/kmc_gradio
     url = https://huggingface.co/spaces/heliaea/kmc_gradio
+
+[submodule "gradio/lr_gradio"]
+    path = gradio/lr_gradio
+    url = https://huggingface.co/spaces/heliaea/lr_gradio
