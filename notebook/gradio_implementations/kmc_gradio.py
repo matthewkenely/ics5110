@@ -81,7 +81,7 @@ def make_gradio(cluster_df, model):
         fn=predict,
         inputs=inputs,
         outputs=output,
-        title='Student Grade Prediction',
+        title='K-Means Clustering',
         description='Enter the student features to predict their cluster',
         flagging_mode='never',
         live=True,

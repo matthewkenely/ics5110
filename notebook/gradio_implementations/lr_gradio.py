@@ -103,7 +103,7 @@ def make_gradio(models):
         fn=predict,
         inputs=inputs,
         outputs=output,
-        title='Student Grade Prediction',
+        title='Linear Regression',
         description='Enter the student features to predict the final grade',
         flagging_mode='never',
         live=True,
