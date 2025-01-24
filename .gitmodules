@@ -1,3 +1,15 @@
 [submodule "gradio/pca_gradio"]
     path = gradio/pca_gradio
     url = https://huggingface.co/spaces/heliaea/pca_gradio
+
+[submodule "gradio/ensemble_gradio"]
+    path = gradio/ensemble_gradio
+    url = https://huggingface.co/spaces/heliaea/ensemble_gradio
+
+[submodule "gradio/kmc_gradio"]
+    path = gradio/kmc_gradio
+    url = https://huggingface.co/spaces/heliaea/kmc_gradio
+
+[submodule "gradio/lr_gradio"]
+    path = gradio/lr_gradio
+    url = https://huggingface.co/spaces/heliaea/lr_gradio

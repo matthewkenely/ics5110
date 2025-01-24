@@ -1,0 +1,34 @@
+Column,Description
+school,Student's school (binary: 'GP' - Gabriel Pereira or 'MS' - Mousinho da Silveira)
+sex,Student's sex (binary: 'F' - female or 'M' - male)
+age,Student's age (numeric: from 15 to 22)
+address,Student's home address type (binary: 'U' - urban or 'R' - rural)
+famsize,Family size (binary: 'LE3' - less or equal to 3 or 'GT3' - greater than 3)
+Pstatus,Parent's cohabitation status (binary: 'T' - living together or 'A' - apart)
+Medu,"Mother's education (numeric: 0 - none, 1 - primary (4th grade), 2 - 5th to 9th grade, 3 - secondary, 4 - higher)"
+Fedu,"Father's education (numeric: 0 - none, 1 - primary (4th grade), 2 - 5th to 9th grade, 3 - secondary, 4 - higher)"
+Mjob,"Mother's job (nominal: 'teacher', 'health' care, 'services' (e.g., administrative/police), 'at_home', 'other')"
+Fjob,"Father's job (nominal: 'teacher', 'health' care, 'services' (e.g., administrative/police), 'at_home', 'other')"
+reason,"Reason to choose this school (nominal: 'home', 'reputation', 'course', 'other')"
+guardian,"Student's guardian (nominal: 'mother', 'father', 'other')"
+traveltime,"Home-to-school travel time (numeric: 1 - <15 min., 2 - 15-30 min., 3 - 30-60 min., 4 - >1 hour)"
+studytime,"Weekly study time (numeric: 1 - <2 hours, 2 - 2-5 hours, 3 - 5-10 hours, 4 - >10 hours)"
+failures,"Number of past class failures (numeric: 1<=n<3, else 4)"
+schoolsup,Extra educational support (binary: yes or no)
+famsup,Family educational support (binary: yes or no)
+paid,Extra paid classes within course subject (Math or Portuguese) (binary: yes or no)
+activities,Extra-curricular activities (binary: yes or no)
+nursery,Attended nursery school (binary: yes or no)
+higher,Wants to pursue higher education (binary: yes or no)
+internet,Internet access at home (binary: yes or no)
+romantic,In a romantic relationship (binary: yes or no)
+famrel,Quality of family relationships (numeric: from 1 - very bad to 5 - excellent)
+freetime,Free time after school (numeric: from 1 - very low to 5 - very high)
+goout,Going out with friends (numeric: from 1 - very low to 5 - very high)
+Dalc,Workday alcohol consumption (numeric: from 1 - very low to 5 - very high)
+Walc,Weekend alcohol consumption (numeric: from 1 - very low to 5 - very high)
+health,Current health status (numeric: from 1 - very bad to 5 - very good)
+absences,Number of school absences (numeric: from 0 to 93)
+G1,first period grade (numeric: from 0 to 20)
+G2,second period grade (numeric: from 0 to 20)
+G3,final grade (numeric: from 0 to 20; output target)

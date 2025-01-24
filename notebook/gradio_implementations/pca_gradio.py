@@ -122,7 +122,7 @@ def make_gradio(models, pcas, model_sizes):
         fn=predict,
         inputs=inputs,
         outputs=output,
-        title='Student Grade Prediction',
+        title='Principal Component Analysis',
         description='Enter the student features to predict the final grade',
         flagging_mode='never',
         live=True,
